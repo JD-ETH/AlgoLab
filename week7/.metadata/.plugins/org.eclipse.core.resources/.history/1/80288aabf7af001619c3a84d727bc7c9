@@ -1,0 +1,42 @@
+//============================================================================
+// Name        : Maximum.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cassert>
+#include <CGAL/basic.h>
+#include <CGAL/QP_models.h>
+#include <CGAL/QP_functions.h>
+#include <CGAL/Gmpz.h>
+
+using namespace std;
+using namespace CGAL;
+
+typedef Gmpz ET;
+typedef Quadratic_program<int> Program;
+typedef Quadratic_program_solution<ET> Solution;
+
+void do_case1(int & a, int& b){
+	Program qp(SMALLER,true,0,false,0);
+	// constraints
+	const int X=0;
+	const int Y=0;
+	qp.set_a(X,0,1);
+}
+int main() {
+	int p ;
+	while (cin >> p && p != 0){
+		int p,a,b;
+		cin >> p >> a >> b;
+		if (p == 1){
+			do_case1(a,b);
+		}
+		else do_case2(a,b);
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

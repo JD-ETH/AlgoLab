@@ -1,0 +1,117 @@
+16:01:59 **** Incremental Build of configuration Debug for project Maximum ****
+make all 
+Building file: ../src/Maximum.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Maximum.d" -MT"src/Maximum.d" -o "src/Maximum.o" "../src/Maximum.cpp"
+Finished building: ../src/Maximum.cpp
+ 
+Building target: Maximum
+Invoking: Cross G++ Linker
+g++  -o "Maximum"  ./src/Maximum.o   
+./src/Maximum.o: In function `CGAL::Gmpz_rep::~Gmpz_rep()':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:55: undefined reference to `__gmpz_clear'
+./src/Maximum.o: In function `CGAL::Gmpz::Gmpz()':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:86: undefined reference to `__gmpz_init'
+./src/Maximum.o: In function `CGAL::Gmpz::Gmpz(int)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:92: undefined reference to `__gmpz_init_set_si'
+./src/Maximum.o: In function `CGAL::Gmpz::to_double() const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:119: undefined reference to `__gmpz_get_d'
+./src/Maximum.o: In function `CGAL::Gmpz::operator+=(CGAL::Gmpz const&)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:139: undefined reference to `__gmpz_add'
+./src/Maximum.o: In function `CGAL::Gmpz::operator-=(CGAL::Gmpz const&)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:140: undefined reference to `__gmpz_sub'
+./src/Maximum.o: In function `CGAL::Gmpz::operator*=(CGAL::Gmpz const&)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:141: undefined reference to `__gmpz_mul'
+./src/Maximum.o: In function `CGAL::Gmpz::operator/=(CGAL::Gmpz const&)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:142: undefined reference to `__gmpz_tdiv_q'
+./src/Maximum.o: In function `CGAL::Gmpz::operator<(CGAL::Gmpz const&) const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:150: undefined reference to `__gmpz_cmp'
+./src/Maximum.o: In function `CGAL::Gmpz::operator==(CGAL::Gmpz const&) const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:152: undefined reference to `__gmpz_cmp'
+./src/Maximum.o: In function `CGAL::Gmpz::operator-() const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:158: undefined reference to `__gmpz_neg'
+./src/Maximum.o: In function `CGAL::Gmpz::operator==(int) const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:184: undefined reference to `__gmpz_cmp_si'
+./src/Maximum.o: In function `CGAL::Gmpz::operator<(int) const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:185: undefined reference to `__gmpz_cmp_si'
+./src/Maximum.o: In function `CGAL::Gmpz::operator>(int) const':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:186: undefined reference to `__gmpz_cmp_si'
+./src/Maximum.o: In function `CGAL::Gmpz::operator*=(int)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:217: undefined reference to `__gmpz_mul_si'
+./src/Maximum.o: In function `CGAL::operator<<(std::ostream&, CGAL::Gmpz const&)':
+/usr/local/include/CGAL/GMP/Gmpz_type.h:278: undefined reference to `__gmpz_sizeinbase'
+/usr/local/include/CGAL/GMP/Gmpz_type.h:279: undefined reference to `__gmpz_get_str'
+./src/Maximum.o: In function `CGAL::Algebraic_structure_traits<CGAL::Gmpz>::Integral_division::operator()(CGAL::Gmpz const&, CGAL::Gmpz const&) const':
+/usr/local/include/CGAL/Gmpz.h:60: undefined reference to `__gmpz_divexact'
+/usr/local/include/CGAL/Gmpz.h:61: undefined reference to `CGAL::postcondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Algebraic_structure_traits<CGAL::Gmpz>::Gcd::operator()(CGAL::Gmpz const&, CGAL::Gmpz const&) const':
+/usr/local/include/CGAL/Gmpz.h:73: undefined reference to `__gmpz_gcd'
+./src/Maximum.o: In function `CGAL::Handle_for<CGAL::Gmpz_rep, std::allocator<CGAL::Gmpz_rep> >::Handle_for(CGAL::Handle_for<CGAL::Gmpz_rep, std::allocator<CGAL::Gmpz_rep> > const&)':
+/usr/local/include/CGAL/Handle_for.h:141: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quadratic_program<int>::Quadratic_program(CGAL::Sign, bool, int, bool, int)':
+/usr/local/include/CGAL/QP_models.h:607: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quadratic_program<int>::set_a(int, int, int const&)':
+/usr/local/include/CGAL/QP_models.h:720: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_models.h:721: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quadratic_program<int>::set_b(int, int const&)':
+/usr/local/include/CGAL/QP_models.h:735: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o:/usr/local/include/CGAL/QP_models.h:807: more undefined references to `CGAL::assertion_fail(char const*, char const*, int, char const*)' follow
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::set_pricing_strategy(CGAL::Quadratic_program_pricing_strategy)':
+/usr/local/include/CGAL/QP_solver/QP_solver_impl.h:3020: undefined reference to `CGAL::default_random'
+/usr/local/include/CGAL/QP_solver/QP_solver_impl.h:3024: undefined reference to `CGAL::default_random'
+/usr/local/include/CGAL/QP_solver/QP_solver_impl.h:3029: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::set(CGAL::Quadratic_program<int> const&)':
+/usr/local/include/CGAL/QP_solver/Initialization.h:87: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/Initialization.h:88: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::init()':
+/usr/local/include/CGAL/QP_solver/Initialization.h:348: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::solve()':
+/usr/local/include/CGAL/QP_solver/QP_solver.h:562: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o:/usr/local/include/CGAL/QP_models.h:533: more undefined references to `CGAL::assertion_fail(char const*, char const*, int, char const*)' follow
+./src/Maximum.o: In function `CGAL::Quotient<CGAL::Gmpz>::Quotient<CGAL::Gmpz, CGAL::Gmpz>(CGAL::Gmpz const&, CGAL::Gmpz const&)':
+/usr/local/include/CGAL/Quotient.h:125: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quadratic_program_solution<CGAL::Gmpz>::infeasibility_certificate_begin() const':
+/usr/local/include/CGAL/QP_solution.h:491: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solution.h:492: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quadratic_program_solution<CGAL::Gmpz>::unboundedness_certificate_begin() const':
+/usr/local/include/CGAL/QP_solution.h:508: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solution.h:509: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Quotient<CGAL::Gmpz>::operator/=(CGAL::Quotient<CGAL::Gmpz> const&)':
+/usr/local/include/CGAL/Quotient.h:252: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::init_x_O_v_i()':
+/usr/local/include/CGAL/QP_solver/Initialization.h:200: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_basis_inverse<CGAL::Gmpz, CGAL::Boolean_tag<false> >::set(int, int, int)':
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse_impl.h:37: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse_impl.h:38: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::init_basis()':
+/usr/local/include/CGAL/QP_solver/Initialization.h:398: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/Initialization.h:399: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o:/usr/local/include/CGAL/QP_solver/Initialization.h:581: more undefined references to `CGAL::assertion_fail(char const*, char const*, int, char const*)' follow
+./src/Maximum.o: In function `CGAL::Map_with_default<std::map<unsigned long, CGAL::Sign, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, CGAL::Sign> > > >::operator()(unsigned long) const':
+/usr/local/include/CGAL/QP_solver/functors.h:264: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Map_with_default<std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > >::operator()(unsigned long) const':
+/usr/local/include/CGAL/QP_solver/functors.h:264: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::Map_with_default<std::map<unsigned long, bool, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, bool> > > >::operator()(unsigned long) const':
+/usr/local/include/CGAL/QP_solver/functors.h:264: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_basis_inverse<CGAL::Gmpz, CGAL::Boolean_tag<false> >::ensure_physical_row(unsigned int)':
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse.h:766: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse.h:771: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse.h:776: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/QP_basis_inverse.h:780: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::original_variable_value_under_bounds(int) const':
+/usr/local/include/CGAL/QP_solver/QP_solver_nonstandardform_impl.h:33: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o:/usr/local/include/CGAL/QP_solver/QP_solver_nonstandardform_impl.h:43: more undefined references to `CGAL::assertion_fail(char const*, char const*, int, char const*)' follow
+./src/Maximum.o: In function `CGAL::QP__partial_base<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::activating(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >&)':
+/usr/local/include/CGAL/QP_solver/QP__partial_base.h:175: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP__partial_base<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::entering_basis(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)':
+/usr/local/include/CGAL/QP_solver/QP__partial_base.h:161: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::nonbasic_original_variable_bound_index(int) const':
+/usr/local/include/CGAL/QP_solver/QP_solver.h:685: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/QP_solver/QP_solver.h:688: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/Maximum.o: In function `CGAL::QP_solver<CGAL::Quadratic_program<int>, CGAL::Gmpz, CGAL::QP_solver_impl::QP_tags<CGAL::Boolean_tag<false>, CGAL::Boolean_tag<false> > >::state_of_zero_nonbasic_variable(int) const':
+/usr/local/include/CGAL/QP_solver/QP_solver.h:701: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+collect2: error: ld returned 1 exit status
+make: *** [Maximum] Error 1
+
+16:02:03 Build Finished (took 3s.865ms)
+
