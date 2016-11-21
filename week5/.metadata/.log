@@ -1,0 +1,33 @@
+!SESSION 2016-11-07 20:07:53.550 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-07 20:08:55.441
+!MESSAGE Indexed 'BurnCoin' (1 sources, 100 headers) in 3.30 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-07 21:15:26.057
+!MESSAGE Indexed 'LightPattern' (1 sources, 100 headers) in 1.62 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-08 10:57:19.941
+!MESSAGE Indexed 'LightInMuseum' (1 sources, 100 headers) in 1.21 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-08 16:12:50.241
+!MESSAGE Indexed 'Light' (1 sources, 100 headers) in 1.82 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-08 18:35:07.508
+!MESSAGE Indexed 'Game' (1 sources, 100 headers) in 1.46 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+!SESSION 2016-11-14 12:18:32.878 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-14 14:34:00.193
+!MESSAGE Indexed 'SecretService' (1 sources, 100 headers) in 3.32 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-14 17:34:49.014
+!MESSAGE Indexed 'pokerchips' (1 sources, 100 headers) in 1.64 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)

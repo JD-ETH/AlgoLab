@@ -1,0 +1,109 @@
+19:35:17 **** Incremental Build of configuration Debug for project TheeV ****
+make all 
+Building file: ../src/TheeV.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TheeV.d" -MT"src/TheeV.d" -o "src/TheeV.o" "../src/TheeV.cpp"
+../src/TheeV.cpp: In function ‘bool covered(std::vector<CGAL::Point_2<CGAL::Epeck> >&, int)’:
+../src/TheeV.cpp:29:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 1; i < v.size(); i++){
+                             ^
+Finished building: ../src/TheeV.cpp
+ 
+Building target: TheeV
+Invoking: Cross G++ Linker
+g++  -o "TheeV"  ./src/TheeV.o   
+./src/TheeV.o: In function `covered(std::vector<CGAL::Point_2<CGAL::Epeck>, std::allocator<CGAL::Point_2<CGAL::Epeck> > >&, int)':
+/home/jd/workspace/AlgoLab/week4/week4/TheeV/Debug/../src/TheeV.cpp:34: undefined reference to `CGAL::default_random'
+./src/TheeV.o: In function `CGAL::Handle::Handle(CGAL::Handle const&)':
+/usr/local/include/CGAL/Handle.h:55: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Handle::operator=(CGAL::Handle const&)':
+/usr/local/include/CGAL/Handle.h:69: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Gmpq_rep::Gmpq_rep()':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:57: undefined reference to `__gmpq_init'
+./src/TheeV.o: In function `CGAL::Gmpq_rep::~Gmpq_rep()':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:58: undefined reference to `__gmpq_clear'
+./src/TheeV.o: In function `CGAL::Gmpq::Gmpq(int)':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:94: undefined reference to `__gmpq_set_si'
+./src/TheeV.o: In function `CGAL::Gmpq::operator==(CGAL::Gmpq const&) const':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:229: undefined reference to `__gmpq_equal'
+./src/TheeV.o: In function `CGAL::Gmpq::operator<(CGAL::Gmpq const&) const':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:230: undefined reference to `__gmpq_cmp'
+./src/TheeV.o: In function `CGAL::Gmpq::operator==(int) const':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:249: undefined reference to `__gmpq_cmp_si'
+./src/TheeV.o: In function `CGAL::Gmpq::operator<(int) const':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:250: undefined reference to `__gmpq_cmp_si'
+./src/TheeV.o: In function `CGAL::Gmpq::operator-() const':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:305: undefined reference to `__gmpq_neg'
+./src/TheeV.o: In function `CGAL::operator+(CGAL::Gmpq const&, CGAL::Gmpq const&)':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:321: undefined reference to `__gmpq_add'
+./src/TheeV.o: In function `CGAL::operator-(CGAL::Gmpq const&, CGAL::Gmpq const&)':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:338: undefined reference to `__gmpq_sub'
+./src/TheeV.o: In function `CGAL::operator*(CGAL::Gmpq const&, CGAL::Gmpq const&)':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:355: undefined reference to `__gmpq_mul'
+./src/TheeV.o: In function `CGAL::operator/(CGAL::Gmpq const&, CGAL::Gmpq const&)':
+/usr/local/include/CGAL/GMP/Gmpq_type.h:371: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/GMP/Gmpq_type.h:373: undefined reference to `__gmpq_div'
+./src/TheeV.o: In function `CGAL::Real_embeddable_traits<CGAL::Gmpq>::To_interval::operator()(CGAL::Gmpq const&) const':
+/usr/local/include/CGAL/Gmpq.h:92: undefined reference to `mpfr_init2'
+/usr/local/include/CGAL/Gmpq.h:93: undefined reference to `mpfr_set_q'
+/usr/local/include/CGAL/Gmpq.h:94: undefined reference to `mpfr_get_d'
+/usr/local/include/CGAL/Gmpq.h:95: undefined reference to `mpfr_set_q'
+/usr/local/include/CGAL/Gmpq.h:96: undefined reference to `mpfr_get_d'
+/usr/local/include/CGAL/Gmpq.h:97: undefined reference to `mpfr_clear'
+./src/TheeV.o: In function `bool CGAL::get_certain<bool>(CGAL::Uncertain<bool>)':
+/usr/local/include/CGAL/Uncertain.h:205: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Uncertain<bool>::Uncertain(bool, bool)':
+/usr/local/include/CGAL/Uncertain.h:103: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Interval_nt<false>::Interval_nt(double)':
+/usr/local/include/CGAL/Interval_nt.h:122: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Interval_nt<false>::Interval_nt(double, double)':
+/usr/local/include/CGAL/Interval_nt.h:138: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Handle_for<CGAL::Gmpq_rep, std::allocator<CGAL::Gmpq_rep> >::Handle_for(CGAL::Handle_for<CGAL::Gmpq_rep, std::allocator<CGAL::Gmpq_rep> > const&)':
+/usr/local/include/CGAL/Handle_for.h:141: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Interval_nt<false>::Test_runtime_rounding_modes::Test_runtime_rounding_modes()':
+/usr/local/include/CGAL/Interval_nt.h:208: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+/usr/local/include/CGAL/Interval_nt.h:210: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o:/usr/local/include/CGAL/Interval_nt.h:208: more undefined references to `CGAL::assertion_fail(char const*, char const*, int, char const*)' follow
+./src/TheeV.o: In function `CGAL::CircleC2<CGAL::Simple_cartesian<CGAL::Gmpq> >::CircleC2(CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Gmpq> > const&, CGAL::Gmpq const&, CGAL::Sign const&)':
+/usr/local/include/CGAL/Cartesian/Circle_2.h:54: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Bounded_side CGAL::get_certain<CGAL::Bounded_side>(CGAL::Uncertain<CGAL::Bounded_side>)':
+/usr/local/include/CGAL/Uncertain.h:205: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::Optimisation_circle_2<CGAL::Epeck>::set()':
+/usr/local/include/CGAL/Min_circle_2/Optimisation_circle_2.h:101: undefined reference to `CGAL::ORIGIN'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::~thread_specific_ptr()':
+/usr/include/boost/thread/tss.hpp:79: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::get() const':
+/usr/include/boost/thread/tss.hpp:84: undefined reference to `boost::detail::get_tss_data(void const*)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::reset(CGAL::Lazy<CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > >*)':
+/usr/include/boost/thread/tss.hpp:105: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+./src/TheeV.o: In function `CGAL::CircleC2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >::CircleC2(CGAL::Point_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > > const&, CGAL::Interval_nt<false> const&, CGAL::Sign const&)':
+/usr/local/include/CGAL/Cartesian/Circle_2.h:54: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Interval_nt<false>, CGAL::Gmpq, CGAL::Lazy_exact_nt<CGAL::Gmpq>, CGAL::To_interval<CGAL::Gmpq> > >::~thread_specific_ptr()':
+/usr/include/boost/thread/tss.hpp:79: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Interval_nt<false>, CGAL::Gmpq, CGAL::Lazy_exact_nt<CGAL::Gmpq>, CGAL::To_interval<CGAL::Gmpq> > >::get() const':
+/usr/include/boost/thread/tss.hpp:84: undefined reference to `boost::detail::get_tss_data(void const*)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Interval_nt<false>, CGAL::Gmpq, CGAL::Lazy_exact_nt<CGAL::Gmpq>, CGAL::To_interval<CGAL::Gmpq> > >::reset(CGAL::Lazy<CGAL::Interval_nt<false>, CGAL::Gmpq, CGAL::Lazy_exact_nt<CGAL::Gmpq>, CGAL::To_interval<CGAL::Gmpq> >*)':
+/usr/include/boost/thread/tss.hpp:105: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+./src/TheeV.o: In function `CGAL::Uncertain<CGAL::Bounded_side>::Uncertain(CGAL::Bounded_side, CGAL::Bounded_side)':
+/usr/local/include/CGAL/Uncertain.h:103: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::PointC2<CGAL::Simple_cartesian<CGAL::Gmpq> >::PointC2(CGAL::Origin const&)':
+/usr/local/include/CGAL/Cartesian/Point_2.h:53: undefined reference to `CGAL::NULL_VECTOR'
+./src/TheeV.o: In function `CGAL::Uncertain<CGAL::Sign>::Uncertain(CGAL::Sign, CGAL::Sign)':
+/usr/local/include/CGAL/Uncertain.h:103: undefined reference to `CGAL::precondition_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `CGAL::PointC2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >::PointC2(CGAL::Origin const&)':
+/usr/local/include/CGAL/Cartesian/Point_2.h:53: undefined reference to `CGAL::NULL_VECTOR'
+./src/TheeV.o: In function `void CGAL::circumcenter_translateC2<CGAL::Gmpq>(CGAL::Gmpq const&, CGAL::Gmpq const&, CGAL::Gmpq const&, CGAL::Gmpq const&, CGAL::Gmpq&, CGAL::Gmpq&)':
+/usr/local/include/CGAL/constructions/kernel_ftC2.h:62: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `void CGAL::circumcenter_translateC2<CGAL::Interval_nt<false> >(CGAL::Interval_nt<false> const&, CGAL::Interval_nt<false> const&, CGAL::Interval_nt<false> const&, CGAL::Interval_nt<false> const&, CGAL::Interval_nt<false>&, CGAL::Interval_nt<false>&)':
+/usr/local/include/CGAL/constructions/kernel_ftC2.h:62: undefined reference to `CGAL::assertion_fail(char const*, char const*, int, char const*)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::~thread_specific_ptr()':
+/usr/include/boost/thread/tss.hpp:79: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::get() const':
+/usr/include/boost/thread/tss.hpp:84: undefined reference to `boost::detail::get_tss_data(void const*)'
+./src/TheeV.o: In function `boost::thread_specific_ptr<CGAL::Lazy<CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > > >::reset(CGAL::Lazy<CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Interval_nt<false> > >, CGAL::Vector_2<CGAL::Simple_cartesian<CGAL::Gmpq> >, CGAL::Gmpq, CGAL::Cartesian_converter<CGAL::Simple_cartesian<CGAL::Gmpq>, CGAL::Simple_cartesian<CGAL::Interval_nt<false> >, CGAL::NT_converter<CGAL::Gmpq, CGAL::Interval_nt<false> > > >*)':
+/usr/include/boost/thread/tss.hpp:105: undefined reference to `boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)'
+collect2: error: ld returned 1 exit status
+make: *** [TheeV] Error 1
+
+19:35:20 Build Finished (took 3s.164ms)
+

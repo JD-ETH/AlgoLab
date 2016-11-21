@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : buddy.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include <vector>
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/max_cardinality_matching.hpp>
+#include <iostream>
+
+using namespace std;
+using namespace boost;
+
+typedef adjacency_list<vecS, vecS, undirectedS> Graph;
+
+void do_case(){
+
+}
+int main() {
+	int t;
+	cin >> t;
+	while (t--){
+		do_case();
+	}
+	return 0;
+}

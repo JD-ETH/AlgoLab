@@ -1,0 +1,84 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <map>
+using namespace std;
+
+
+void find_jedi(){
+  // read inputs
+  int n,m;
+  cin >> n >> m;
+  vector<int> a(n), b(n);
+  for (int i =0 ; i < n ; i ++){
+    cin >> a[i];
+    cin >> b[i];
+  }
+
+  // find one segment with less then 10 jedi
+  int counter =0;
+  int seg_ind;
+
+  vector<int> jedi_index(20,-1);
+  for(int j = 1; j< m+1 ; j++, counter = 0){ // test every segment
+    for (int i = 0; i <n and counter != 11; i++){
+
+      if (b[i]< a[i]){ // in two turns
+        if (!(j < a[i] and j > b[i])) jedi_index[counter++] = i;
+      }
+
+      else {
+        if (j>=a[i] and j <= b[i]) jedi_index[counter++] = i;
+      }
+    }
+    if ( counter <= 10) {seg_ind = j; break;}
+
+    fill(jedi_index.begin(),jedi_index.end(),-1);
+  }
+
+
+  // Reorganize the data depending on the current index
+  multimap<int,int> data; // Data without jedis defending this segment
+  vector<int>::iterator itjedi;
+  for (int i = 0; i <n ; i ++){
+
+	  itjedi = find(jedi_index.begin(), jedi_index.begin()+counter,i);
+	  if (itjedi == (jedi_index.begin()+counter) ) { // Not found
+		  int key = (b.at(i)< seg_ind ? b.at(i)+m : b.at(i));
+		  int value = (a.at(i)< seg_ind ? a.at(i)+m :a.at(i));
+		  data.insert(pair<int,int>(key,value));
+	  }
+  }
+  // Run the greedy algorithm counter + 1 times
+  int best = 0;
+  for (int p = 0, f = seg_ind-1, lastseg = seg_ind+m; p <= counter; p++){
+	  int num=0;
+	  if (p != 0){ // Update starting and end point if not from zero
+		  int ind = jedi_index[p-1];
+		  f = b[ind];
+		  lastseg = (a[ind] <= seg_ind ? a[ind]+m : a[ind]);
+		  num ++;
+	  }
+
+	  for (multimap<int,int>::iterator it = data.begin(); it != data.end(); it++){ // Iterate through
+		  if (it->second > f and it->first < lastseg){ // New jedi possible
+			  num ++;
+			  f = it->first;
+		  }
+	  }
+
+	  best = max(best,num);
+
+  }
+  data.clear();
+  cout << best << endl;
+}
+
+int main(){
+  int t;
+  cin >> t;
+  while(t--){
+    find_jedi();
+  }
+  return 0;
+}

@@ -1,0 +1,72 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <map>
+using namespace std;
+
+
+void find_jedi(){
+  // read inputs
+  int n,m;
+  cin >> n >> m;
+  int a[n],b[n];
+  for (int i =0 ; i < n ; i ++){
+    cin >> a[i];
+    cin >> b[i];
+  }
+
+  // find one segment with less then 10 jedi
+  int counter =0;
+  int seg_ind;
+
+  vector<int> jedi_index(10,-1);
+  for(int j = 1; j< m+1 ; j++, counter = 0){ // test every segment
+    for (int i = 0; i <n, counter != 11; i++){
+
+      if (b[i]< a[i]){ // in two turns
+        if (!(j < a[i] and j > b[i])) jedi_index[counter++] = i;
+      }
+
+      else {
+        if (j>=a[i] and j <= b[i]) jedi_index[counter++] = i;
+      }
+    }
+
+    if ( counter <= 10) {seg_ind = j; break;}
+
+    fill(jedi_index.begin(),jedi_index.end(),-1);
+  }
+
+
+  // Reorganize the data depending on the current index
+  multimap<int,int> data; // Data without jedis defedning this segment
+  for (int i = 0; i <n ; i ++){
+	  vector<int>::iterator it;
+	  it = find(jedi_index.begin(), jedi_index.begin()+counter,i);
+	  if (it == (jedi_index.begin()+counter) ) { // Not found
+		  data.insert(make_pair((b[i]< seg_ind ? b[i]+m : b[i]),(a[i]< seg_ind ? a[i]+m : a[i])));
+	  }
+  }
+
+
+  // Run the greedy algorithm counter + 1 times
+  int num = 0;
+  for (int p = 0, f = seg_ind, lastseg = seg_ind+m-1; p <= counter; p++){
+	  if (p != 0){ // Start from zero initialization
+		  int ind = jedi_index[p-1];
+		  if (b[ind]<a[ind]){
+			  f = b[ind];
+			  lastseg = a[ind];
+		  }
+	  }
+  }
+
+}
+
+int main(){
+  int t;
+  while(t--){
+    find_jedi();
+  }
+  return 0;
+}

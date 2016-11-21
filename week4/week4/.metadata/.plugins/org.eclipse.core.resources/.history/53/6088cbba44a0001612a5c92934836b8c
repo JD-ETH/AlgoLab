@@ -1,0 +1,39 @@
+//============================================================================
+// Name        : FirstStep.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/kruskal_min_spanning_tree.hpp>
+#include <boost/graph/dijkstra_shortest_paths.hpp>
+
+using namespace std;
+using namespace boost;
+
+typedef adjacency_list<vecS,vecS,undirectedS,
+		no_property,
+		property<edge_weight_t,int>
+		>                              Graph;
+
+//typedef graph_traits
+typedef property_map<Graph, edge_weight_t>::type WeightMap;
+
+
+void do_case(){
+	int V,E;
+	cin >> V >> E;
+
+}
+int main() {
+	int t;
+	cin>> t;
+	while(t--){
+		do_case();
+	}
+	return 0;
+}

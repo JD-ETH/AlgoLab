@@ -1,0 +1,42 @@
+//============================================================================
+// Name        : Coin.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
+
+class node {
+public:
+	node(int index, int level) : index_(index), level_(level){}
+	int index_;
+	int level_;
+};
+
+void do_case(){
+	int k,s,m;
+	// easiest case 1
+	cin >> k >> s >> m;
+	vector<node> nodes(k);
+	int ignore;
+	for (int i = 0; i < m; i ++){
+		int u,v,h;
+		cin >> u >> v >> h;
+		for (int j = 0; j < )
+	}
+}
+int main() {
+	ios_base::sync_with_stdio(false);
+	int t;
+	cin >> t;
+	while (t--) {
+		do_case();
+	}
+	return 0;
+}
+

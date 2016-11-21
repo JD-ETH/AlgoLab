@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : boats.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int test_case;
+	for (int test_num = 0; test_num < test_case; test_num++) {
+		cin >> test_case;
+		vector<int> pos;
+		vector<int> l;
+		int num;
+		cin >> num;
+		for (int i = 0; i < num; i++) {
+			cin
+		}
+	}
+	return 0;
+}

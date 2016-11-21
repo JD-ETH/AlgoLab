@@ -1,0 +1,86 @@
+//============================================================================
+// Name        : Evolution.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+using namespace std;
+
+struct node {
+	int the_age;
+	node * ancestor;
+};
+
+// record ( int, ancestor* )
+// map <string,
+
+int main() {
+	std::ios_base::sync_with_stdio(false);
+	int t;
+	cin >> t;
+	while (t--) {
+		int n; // Species
+		int q; //Q Quiries
+		cin >> n >> q;
+		map<string, node> data; // Name and age
+//		map<string, string> ancestor; // Name and Ancestor
+//		vector<node> data;
+		string luca;
+		int cur_max = 0;
+//		int max_ind;
+		for (int i = 0; i < n; i++) {
+			int a;
+			string nm;
+			cin >> nm;
+			cin >> a;
+			node nd;
+			nd.the_age = a;
+//			data[i].the_age = a;
+//			data[i].name = nm;
+			data.insert(data.end(),make_pair(nm, nd));
+			if (cur_max < a) {
+				cur_max = a;
+//				max_ind = i;
+				luca = nm;
+			}
+		}
+
+		for (int i = 0; i < n - 1; i++) {
+			string ances;
+			string nm;
+			cin >> nm;
+			cin >> ances;
+			data.find(nm)->second.ancestor = data.find(ances);
+//			ancestor.insert(make_pair(name, ances));
+		}
+		data.find(luca)->second.ancestor = data.find(luca);
+//		ancestor.insert(make_pair(luca, luca));
+		for (int i = 0; i < q; i++) {
+			string what;
+			int old;
+			cin >> what >> old;
+			// Tranverse through tree
+
+			string curr = what;
+			string curr_last;
+			auto it = data.find(what);
+			while (it->second.the_age <= old ) {
+				curr_last = curr;
+				// statt look-up in table
+//				curr = ancestor.find(curr)->second;
+				it = it->second.ancestor;
+				if (curr_last==luca) {break;}
+//				cout << "currently at " << curr <<endl;
+			}
+
+			cout << curr_last << " ";
+		}
+		cout << endl;
+	}
+	return 0;
+}

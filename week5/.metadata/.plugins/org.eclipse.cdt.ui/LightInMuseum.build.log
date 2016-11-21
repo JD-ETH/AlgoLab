@@ -1,0 +1,40 @@
+12:26:40 **** Incremental Build of configuration Debug for project LightInMuseum ****
+make all 
+Building file: ../src/Light.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Light.d" -MT"src/Light.d" -o "src/Light.o" "../src/Light.cpp"
+../src/Light.cpp:9:8: error: ‘vector’ does not name a type
+ static vector<int> goal;
+        ^
+../src/Light.cpp:10:8: error: ‘vector’ does not name a type
+ static vector<vector<int> > init, rev;
+        ^
+../src/Light.cpp:11:8: error: ‘vector’ does not name a type
+ static vector<int> starting;
+        ^
+../src/Light.cpp:13:8: error: ‘vector’ does not name a type
+ static vector<bool> status;
+        ^
+../src/Light.cpp: In function ‘void do_case()’:
+../src/Light.cpp:22:2: error: ‘starting’ was not declared in this scope
+  starting.clear();
+  ^
+../src/Light.cpp:24:2: error: ‘goal’ was not declared in this scope
+  goal.clear();
+  ^
+../src/Light.cpp:26:2: error: ‘init’ was not declared in this scope
+  init.clear();
+  ^
+../src/Light.cpp:28:2: error: ‘rev’ was not declared in this scope
+  rev.clear();
+  ^
+../src/Light.cpp:30:2: error: ‘status’ was not declared in this scope
+  status = vector<bool>(N, false);
+  ^
+../src/Light.cpp:46:42: error: ‘f’ was not declared in this scope
+  pair<bool, int> solution = f(0, starting);
+                                          ^
+make: *** [src/Light.o] Error 1
+
+12:26:40 Build Finished (took 156ms)
+
