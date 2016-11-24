@@ -27,19 +27,43 @@ typedef graph_traits<Un_Graph>::edge_descriptor Un_Edge;
 
 static int n, m, a, s, c, d;
 vector<vector<int> > age_to_shelters;
-bool Escape_success (int t){
-	int edge_max = t-d;
-	Un_Graph g(a+s);
-	for (int i = 0; i < a; i++){
-		for (int j = 0; j < s; j ++){
-			if ( age_to_shelters[i][j] <= edge_max) {
-				add_edge(i,a+j,g);
+bool Escape_success(int t) {
+	if (c == 1) {
+		int edge_max = t - d;
+		Un_Graph g(a + s);
+		for (int i = 0; i < a; i++) {
+			for (int j = 0; j < s; j++) {
+				if (age_to_shelters[i][j] <= edge_max) {
+					add_edge(i, a + j, g);
+				}
 			}
 		}
+		vector<Un_Vertex> matemap(a + s);
+		edmonds_maximum_cardinality_matching(g,
+				make_iterator_property_map(matemap.begin(),
+						get(vertex_index, g)));
+		return (matching_size(g, &matemap[0]) == a);
+	} else {
+		// In case c = 2 and examine other possibility!
+		int edge_sec_to_last = t - 2 * d;
+		int edge_last = t - d;
+		Un_Graph g(a + 2 * s);
+		for (int i = 0; i < a; i++) {
+			for (int j = 0; j < s; j++) {
+				if (age_to_shelters[i][j] <= edge_last) { // the second spot
+					add_edge(i, a + j, g);
+					if (age_to_shelters[i][j] <= edge_sec_to_last) {
+						add_edge(i, a + s + j, g);
+					}
+				}
+			}
+		}
+		vector<Un_Vertex> matemap(a + 2*s);
+		edmonds_maximum_cardinality_matching(g,
+				make_iterator_property_map(matemap.begin(),
+						get(vertex_index, g)));
+		return (matching_size(g, &matemap[0]) == a);
 	}
-	vector<Un_Vertex> matemap(a+s);
-	edmonds_maximum_cardinality_matching(g, make_iterator_property_map(matemap.begin(),get(vertex_index,g)));
-	return (matching_size(g,&matemap[0]) == a);
 }
 void do_case() {
 	// Read
@@ -48,7 +72,7 @@ void do_case() {
 	Graph G(n);
 	vector<int> agents(a);
 	vector<int> shelters(s);
-	age_to_shelters = vector<vector <int> >(a, vector<int>(s, INT_MAX));
+	age_to_shelters = vector<vector<int> >(a, vector<int>(s, INT_MAX));
 	WeightMap weightmap = get(edge_weight, G);
 	while (m--) {
 		Edge e;
@@ -67,13 +91,14 @@ void do_case() {
 			weightmap[e] = w;
 		}
 	}
+
 	for (int i = 0; i < a; i++)
 		cin >> agents[i];
 	for (int i = 0; i < s; i++)
 		cin >> shelters[i];
 
 	// First solve the dijstra path problem multiple times
-	int max_dist =0;
+	int max_dist = 0;
 	for (int i = 0; i < a; i++) {
 		vector<Vertex> predmap(n);
 		vector<int> distmap(n);
@@ -88,22 +113,22 @@ void do_case() {
 								get(vertex_index, G))));// distance map as Named Parameter
 		for (int j = 0; j < s; j++) {
 			int ind = shelters[j];
-			if (distmap[ind] < INT_MAX){
+			if (distmap[ind] < INT_MAX) {
 				age_to_shelters[i][j] = distmap[ind];
-				max_dist = max (max_dist,distmap[ind]);
+				max_dist = max(max_dist, distmap[ind]);
 			}
 		}
 	}
 
 	// Find the shortest time
 	int tmin = 0;
-	int tmax = max_dist+d;
-	while (tmin != tmax){
-		int mid = (tmin+tmax)/2;
+	int tmax = max_dist + d;
+	while (tmin != tmax) {
+		int mid = (tmin + tmax) / 2;
 		if (Escape_success(mid)) {
 			tmax = mid;
-		}
-		else tmin = mid + 1;
+		} else
+			tmin = mid + 1;
 	}
 	cout << tmin << endl;
 }
