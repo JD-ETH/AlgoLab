@@ -1,0 +1,2 @@
+/home/jd/eclipse_ws/AlgoLab/week8/graypes/CMakeFiles/graypes.dir
+/home/jd/eclipse_ws/AlgoLab/week8/graypes/CMakeFiles/solution.dir
