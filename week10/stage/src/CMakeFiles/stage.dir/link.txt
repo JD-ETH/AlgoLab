@@ -1,0 +1,1 @@
+/usr/bin/c++    -frounding-math -O3 -DNDEBUG    CMakeFiles/stage.dir/stage.cpp.o  -o stage  -L/usr/local/lib -rdynamic -lmpfr -lgmp /usr/local/lib/libCGAL_Core.so /usr/local/lib/libCGAL.so -lboost_thread -lboost_system -lpthread /usr/local/lib/libCGAL_Core.so /usr/local/lib/libCGAL.so -lboost_thread -lboost_system -lpthread -Wl,-rpath,/usr/local/lib 
