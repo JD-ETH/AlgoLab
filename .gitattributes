@@ -1,1 +1,2 @@
 *.mk linguist-language=C++
+*.cmake linguist-language=C++
