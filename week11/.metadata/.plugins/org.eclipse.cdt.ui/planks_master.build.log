@@ -1,0 +1,6 @@
+21:00:47 **** Incremental Build of configuration Debug for project planks_master ****
+make all 
+make: Nothing to be done for `all'.
+
+21:00:47 Build Finished (took 95ms)
+

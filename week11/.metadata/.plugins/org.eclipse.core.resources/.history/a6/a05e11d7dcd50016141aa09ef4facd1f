@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+
+using std::vector;
+using std::cin;
+using std::cout;
+
+typedef vector<vector<int> > vecvec;
+
+// This is a DP problem, recursively calculating for given number of litres
+vecvec memo;
+const int MAX_PRICE = 10000000;
+// given an exact amout of the bevarage, mix up with least price
+int cheapest_cost(int num_bev, int liter, vector<int> const & cost, vector<int> const & amount){
+  int res;
+  if (memo[num_bev][liter] == -1 ){ // exact amount of liter
+    if (liter == 0 ) {
+      res = 0;
+      }
+    else if (num_bev = 0 || liter <0 ){ // No choice but all
+      res = MAX_PRICE;
+    }
+    else{
+      res = std::min(cheapest_cost(num_bev-1,liter,cost,amount),
+                    cost[num_bev]+cheapest_cost(num_bev,liter-amount[num_bev],cost,amount));
+      memo[num_bev][liter] = res;
+    }
+  }
+  else res = memo[num_bev][liter];
+
+  return res;
+}
+
+void do_case(){
+  int n,k;
+  cin >> n >> k;
+  vector<int> cost(n);
+  vector<int> amount(n);
+  for (int i = 0; i < n; i ++){
+    cin >> cost[i];
+    cin >> amount[i];
+  }
+  memo= vecvec(n,vector<int>(n,-1));
+  cout << cheapest_cost(n,k,cost,amount);
+}
+
+int main (){
+  std::ios_base::sync_with_stdio(false);
+  int t;
+  cin >> t ;
+  while(t--){
+    do_case();
+  }
+}

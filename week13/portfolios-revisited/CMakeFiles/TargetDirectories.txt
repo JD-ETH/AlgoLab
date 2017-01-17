@@ -1,0 +1,2 @@
+/home/jd/eclipse_ws/AlgoLab/week13/portfolios-revisited/CMakeFiles/protfolio-rev.dir
+/home/jd/eclipse_ws/AlgoLab/week13/portfolios-revisited/CMakeFiles/protfolios-master.dir

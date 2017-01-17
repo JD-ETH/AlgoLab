@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : bonus.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+
+// The forward way is a easy DP, what is the return?
+//
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void do_case(){
+
+}
+
+int main() {
+
+	int t;
+	cin >> t;
+	while(t--){
+		do_case();
+	}
+
+	return 0;
+}

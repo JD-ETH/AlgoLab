@@ -1,1 +1,0 @@
-/home/jd/eclipse_ws/AlgoLab/week8/bistro/CMakeFiles/bistro.dir

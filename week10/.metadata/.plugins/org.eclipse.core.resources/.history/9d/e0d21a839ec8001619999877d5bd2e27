@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : odd.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include <vector>
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/dijkstra_shortest_paths.hpp>
+#include <boost/tuple/tuple.hpp>
+#include <climits>
+#include <iostream>
+using namespace std;
+using namespace boost;
+
+typedef adjacency_list<vecS,vecS,directedS,no_property,property<edge_weight_t,int> > Graph;
+typedef property_map<Graph,edge_weight_t>::type EdgeWeightMap;
+typedef graph_traits<Graph>::edge_descriptor Edge;
+typedef graph_traits<Graph>::vertex_descriptor Vertex;
+
+int main() {
+	int t;
+	cin >> t;
+	while(t--){
+		do_case();
+	}
+	return 0;
+}

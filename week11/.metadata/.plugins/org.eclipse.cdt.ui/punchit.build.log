@@ -1,0 +1,15 @@
+21:02:59 **** Incremental Build of configuration Debug for project punchit ****
+make all 
+Building file: ../src/punchit.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/punchit.d" -MT"src/punchit.o" -o "src/punchit.o" "../src/punchit.cpp"
+Finished building: ../src/punchit.cpp
+ 
+Building target: punchit
+Invoking: Cross G++ Linker
+g++  -o "punchit"  ./src/punchit.o   
+Finished building target: punchit
+ 
+
+21:02:59 Build Finished (took 635ms)
+

@@ -1,0 +1,15 @@
+22:39:37 **** Incremental Build of configuration Debug for project bonus ****
+make all 
+Building file: ../src/bonus.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bonus.d" -MT"src/bonus.o" -o "src/bonus.o" "../src/bonus.cpp"
+Finished building: ../src/bonus.cpp
+ 
+Building target: bonus
+Invoking: Cross G++ Linker
+g++  -o "bonus"  ./src/bonus.o   
+Finished building target: bonus
+ 
+
+22:39:38 Build Finished (took 366ms)
+

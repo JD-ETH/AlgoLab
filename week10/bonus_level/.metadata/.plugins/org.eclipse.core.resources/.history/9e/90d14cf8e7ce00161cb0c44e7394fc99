@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : bonus.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+
+// The forward way is a easy DP, what is the return?
+// Same thing pretend to solve twice in parallel
+#include <iostream>
+#include <vector>
+using namespace std;
+typedef vector<vector<vector<int> > > mat3d;
+mat3d memo;
+
+void do_case(){
+	int n;
+	cin >> n;
+	vector<vector<int> > original(n,vector<int>(n,0));
+	for (int i = 0; i < n ; i ++){
+		for (int j = 0; j< n; j++){
+			cin >> original[i][j];
+		}
+	}
+	memo.resize(n);
+
+}
+
+int main() {
+
+	int t;
+	cin >> t;
+	while(t--){
+		do_case();
+	}
+
+	return 0;
+}

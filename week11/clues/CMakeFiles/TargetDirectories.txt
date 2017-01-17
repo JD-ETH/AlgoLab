@@ -1,2 +1,0 @@
-/home/jd/eclipse_ws/AlgoLab/week11/clues/CMakeFiles/clues_master.dir
-/home/jd/eclipse_ws/AlgoLab/week11/clues/CMakeFiles/clues_own.dir
