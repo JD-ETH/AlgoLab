@@ -1,0 +1,27 @@
+12:39:42 **** Incremental Build of configuration Debug for project hope ****
+make all 
+Building file: ../src/hope.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hope.d" -MT"src/hope.d" -o "src/hope.o" "../src/hope.cpp"
+../src/hope.cpp: In member function ‘int node::enforce(std::vector<int>)’:
+../src/hope.cpp:49:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < ext.size(); i++) {
+                               ^
+../src/hope.cpp: In member function ‘bool node::violet_own(int)’:
+../src/hope.cpp:118:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < controlled.size(); i++) {
+                                      ^
+../src/hope.cpp: In function ‘int solve(node&, int)’:
+../src/hope.cpp:167:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < cur_sub_set.size();i++){
+                                         ^
+Finished building: ../src/hope.cpp
+ 
+Building target: hope
+Invoking: Cross G++ Linker
+g++  -o "hope"  ./src/hope.o   
+Finished building target: hope
+ 
+
+12:39:43 Build Finished (took 813ms)
+

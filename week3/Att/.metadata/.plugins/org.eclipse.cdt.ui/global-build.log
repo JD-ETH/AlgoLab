@@ -1,0 +1,529 @@
+18:28:49 **** Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:24:23: warning: left operand of comma operator has no effect [-Wunused-value]
+     for (int i = 0; i <n, counter != 11; i++){
+                       ^
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:31:10 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:33:29 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:34:10 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:34:14 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:34:57 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:35:12 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:40:08 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:42:41 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:44:55 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:46:20 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:56:03 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:56:04 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:56:08 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:56:41 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+18:56:44 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+18:57:06 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:19:45 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+19:26:09 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:49:37: error: expected ‘)’ before ‘;’ token
+     data.insert(make_pair(key,value);
+                                     ^
+make: *** [src/Att.o] Error 1
+19:26:15 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:77:11: error: a function-definition is not allowed here before ‘{’ token
+ int main(){
+           ^
+../src/Att.cpp:84:1: error: expected ‘}’ at end of input
+ }
+ ^
+../src/Att.cpp:84:1: error: expected ‘}’ at end of input
+make: *** [src/Att.o] Error 1
+19:26:46 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:77:11: error: a function-definition is not allowed here before ‘{’ token
+ int main(){
+           ^
+../src/Att.cpp:84:1: error: expected ‘}’ at end of input
+ }
+ ^
+make: *** [src/Att.o] Error 1
+19:27:06 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:27:19 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+19:29:26 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:33:19 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:33:24 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+19:34:57 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:34:59 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+19:36:34 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:37:22 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+19:41:20 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:46:49 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:47:52 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+19:48:05 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+20:22:35 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+20:47:42 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+20:51:29 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+20:53:32 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:02:01 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:02:56 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:03:46 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:06:08 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:11:25 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+21:11:27 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:13:07 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:19:07 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+21:21:01 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:39:33: error: no match for ‘operator+’ (operand types are ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ and ‘int’)
+    if (overlap < counter and (it+1)->first != it->first) {
+                                 ^
+../src/Att.cpp:39:33: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   mismatched types ‘const _CharT*’ and ‘std::_Rb_tree_iterator<std::pair<const int, bool> >’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ../src/Att.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note:   template argument deduction/substitution failed:
+../src/Att.cpp:39:34: note:   ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (overlap < counter and (it+1)->first != it->first) {
+                                  ^
+In file included from /usr/include/c++/4.8/vector:65:0,
+                 from ../src/Att.cpp:3:
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note:   no known conversion for argument 1 from ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note:   no known conversion for argument 1 from ‘std::map<int, bool>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, bool> >}’ to ‘std::ptrdiff_t {aka long int}’
+make: *** [src/Att.o] Error 1
+21:22:05 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:31:6: warning: variable ‘last_id’ set but not used [-Wunused-but-set-variable]
+  int last_id=0;
+      ^
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+21:22:07 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:24:25 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:31:6: warning: variable ‘last_id’ set but not used [-Wunused-but-set-variable]
+  int last_id=0;
+      ^
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+21:24:34 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.
+21:26:22 **** Incremental Build of configuration Debug for project Att ****
+make all 
+Building file: ../src/Att.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Att.d" -MT"src/Att.d" -o "src/Att.o" "../src/Att.cpp"
+../src/Att.cpp: In function ‘void find_jedi()’:
+../src/Att.cpp:31:6: warning: variable ‘last_id’ set but not used [-Wunused-but-set-variable]
+  int last_id=0;
+      ^
+Finished building: ../src/Att.cpp
+ 
+Building target: Att
+Invoking: Cross G++ Linker
+g++  -o "Att"  ./src/Att.o   
+Finished building target: Att
+ 
+21:26:24 **** Incremental Build of configuration Debug for project Att ****
+make all 
+make: Nothing to be done for `all'.

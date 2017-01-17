@@ -1,0 +1,3 @@
+/home/jd/workspace/AlgoLab/week7/snippets/CMakeFiles/cancer_therapy.dir
+/home/jd/workspace/AlgoLab/week7/snippets/CMakeFiles/investment.dir
+/home/jd/workspace/AlgoLab/week7/snippets/CMakeFiles/minimize.dir

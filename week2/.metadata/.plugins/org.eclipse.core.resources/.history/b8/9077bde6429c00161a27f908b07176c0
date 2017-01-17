@@ -1,0 +1,112 @@
+//============================================================================
+// Name        : Evolution.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+using namespace std;
+
+struct node {
+	int the_age;
+	map<string,node>::iterator  ancestor;
+	vector<map<string,node>::iterator> path_to_luca;
+	bool PATH_DONE = false;
+};
+
+vector<map<string,node>::iterator> get_path_to_luca (map<string,node>::iterator cur_it)
+		{
+			cur_it->second.PATH_DONE = true; // Change flag
+			if ( cur_it == cur_it -> second.ancestor){
+				// Pointing to itself, only luca
+				vector<map<string,node>::iterator> primary_path;
+				primary_path.push_back(cur_it);
+				return primary_path;
+			}
+
+			return get_path_to_luca(cur_it->second.ancestor).push_back(cur_it); // Recursive Call
+		}
+
+int main() {
+	std::ios_base::sync_with_stdio(false);
+	int t;
+	cin >> t;
+	while (t--) {
+		int n; // Species
+		int q; //Q Quiries
+		cin >> n >> q;
+		map<string, node> data; // Name and age
+
+		string luca;
+		int cur_max = 0;
+
+		for (int i = 0; i < n; i++) {
+			int a;
+			string nm;
+			cin >> nm;
+			cin >> a;
+			node nd;
+			nd.the_age = a;
+
+			data.insert(data.end(),make_pair(nm, nd));
+			if (cur_max < a) {
+				cur_max = a;
+
+				luca = nm;
+			}
+		}
+
+		for (int i = 0; i < n - 1; i++) {
+			string ances;
+			string nm;
+			cin >> nm;
+			cin >> ances;
+			data.find(nm)->second.ancestor = data.find(ances);
+
+		}
+		data.find(luca)->second.ancestor = data.find(luca);
+
+		// Find All independent paths
+		for (map<string,node>::iterator it= data.begin(); it != data.end(); it ++){
+			if(!it->second.PATH_DONE){
+				it->second.path_to_luca = get_path_to_luca(it);
+			}
+		}
+
+
+		for (int i = 0; i < q; i++) {
+			string what;
+			int old;
+			cin >> what >> old;
+//			// Tranverse through tree
+//
+//			string curr = what;
+//			map<string,node>::iterator it = data.find(what);
+//			while (it->second.the_age <= old ) {
+//				curr= it->first;
+//
+//				it = it->second.ancestor;
+//				if (curr==luca) {break;}
+//			}
+			// binary search through individual paths
+			map<int,node>::iterator it0 = data.find(what);
+			int left=0, right=it0->second.path_to_luca.size()-1;
+			int cur_age;
+			int mid
+			while (left != right){
+				mid = (left+right)/2;
+				cur_age = it0->second.path_to_luca[mid]->second.the_age;
+				if (cur_age>old){left=mid+1;}
+				else {right = mid;}
+
+			}
+			cout <<  it0->second.path_to_luca[mid]->first << " ";
+		}
+		cout << endl;
+	}
+	return 0;
+}

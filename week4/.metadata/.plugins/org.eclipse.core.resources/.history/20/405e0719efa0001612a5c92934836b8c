@@ -1,0 +1,67 @@
+//============================================================================
+// Name        : bridge.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/connected_components.hpp>
+using namespace std;
+using namespace boost;
+
+typedef adjacency_list<vecS, vecS, undirectedS> Graph;
+typedef graph_traits<Graph>::edge_descriptor Edge;
+typedef graph_traits<Graph>::vertex_descriptor Vertex;
+typedef graph_traits<Graph>::edge_iterator EdgeIt;
+
+void do_case() {
+	// Read input
+	int V, E;
+	cin >> V >> E;
+	Graph G(V);
+	for (int i = 0; i < E; i++) {
+		int u, v;
+		cin >> u >> v;
+		Edge e;
+		bool suc;
+		tie(e, suc) = add_edge(v, u, G);
+	}
+
+	// Connected components calculation
+	EdgeIt ebeg, eend;
+	vector<pair<int, int> > sol;
+	int count = 0;
+	for (tie(ebeg, eend) = edges(G); ebeg != eend; ebeg++) {
+		vector<int> componentmap(V);// We MUST use such a vector as an Exterior Property Map: Vertex -> Component
+		int cc = connected_components(G,
+				make_iterator_property_map(componentmap.begin(),
+						get(vertex_index, G)));
+		if (cc!= 2) continue;
+
+		Vertex u = source(*ebeg, G), v = target(*ebeg, G);
+		if (componentmap[u] != componentmap[v]) {
+			count++;
+			sol.push_back(make_pair(u, v));
+		}
+	}
+	cout << count << "\n";
+
+	// All briges
+	sort(sol.begin(), sol.end());
+	for (int i = 0; i < count; i++) {
+		cout << sol[i].first << " " << sol[i].second << endl;
+	}
+}
+int main() {
+	int t;
+	cin >> t;
+	while (t--) {
+		do_case();
+	}
+	return 0;
+}

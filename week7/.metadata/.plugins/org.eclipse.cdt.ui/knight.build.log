@@ -1,0 +1,19 @@
+00:01:08 **** Incremental Build of configuration Debug for project knight ****
+make all 
+Building file: ../src/knight.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/knight.d" -MT"src/knight.d" -o "src/knight.o" "../src/knight.cpp"
+../src/knight.cpp: In function ‘void do_case()’:
+../src/knight.cpp:58:22: warning: variable ‘rescapacitymap’ set but not used [-Wunused-but-set-variable]
+  ResidualCapacityMap rescapacitymap = get(edge_residual_capacity, G);
+                      ^
+Finished building: ../src/knight.cpp
+ 
+Building target: knight
+Invoking: Cross G++ Linker
+g++  -o "knight"  ./src/knight.o   
+Finished building target: knight
+ 
+
+00:01:10 Build Finished (took 2s.276ms)
+

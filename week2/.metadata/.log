@@ -1,0 +1,39 @@
+!SESSION 2016-10-20 20:29:52.145 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-20 23:09:02.849
+!MESSAGE Indexed 'SearchSnippets' (1 sources, 0 headers) in 0.06 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+!SESSION 2016-10-25 13:29:43.105 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-25 13:30:27.828
+!MESSAGE Indexed 'boats' (1 sources, 100 headers) in 2.85 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+!SESSION 2016-10-25 14:50:45.727 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-25 14:55:23.091
+!MESSAGE Indexed 'MoveBook' (1 sources, 100 headers) in 3.56 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-25 21:40:48.419
+!MESSAGE Indexed 'Evolution' (1 sources, 100 headers) in 1.43 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-26 18:51:40.122
+!MESSAGE Indexed 'Octopussy' (1 sources, 100 headers) in 1.39 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-27 16:24:58.034
+!MESSAGE Indexed 'Evolution-Git' (1 sources, 100 headers) in 1.43 sec: 8,184 declarations; 14,201 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-27 16:34:11.147
+!MESSAGE Indexed 'Evolution-Git' (1 sources, 120 headers) in 1.17 sec: 9,260 declarations; 16,715 references; 0 unresolved inclusions; 1 syntax errors; 6 unresolved names (0.02%)

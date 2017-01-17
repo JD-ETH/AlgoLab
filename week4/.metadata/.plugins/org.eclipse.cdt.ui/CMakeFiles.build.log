@@ -1,0 +1,6 @@
+19:23:00 **** Incremental Build of configuration Default for project CMakeFiles ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+19:23:00 Build Finished (took 58ms)
+
