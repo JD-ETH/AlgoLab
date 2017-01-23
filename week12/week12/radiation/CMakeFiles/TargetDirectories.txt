@@ -1,1 +1,0 @@
-/home/jd/eclipse_ws/AlgoLab/week12/week12/radiation/CMakeFiles/radiation.dir
