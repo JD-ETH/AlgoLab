@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jd/workspace/AlgoLab/week7/week7/diet/diet.cpp" "/home/jd/workspace/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir/diet.cpp.o"
+  "/home/jd/git/AlgoLab/week7/week7/diet/diet.cpp" "/home/jd/git/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir/diet.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

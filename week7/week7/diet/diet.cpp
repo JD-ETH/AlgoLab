@@ -4,13 +4,13 @@
 #include <CGAL/basic.h>
 #include <CGAL/QP_models.h>
 #include <CGAL/QP_functions.h>
-#include <CGAL/Gmpzf.h>
+#include <CGAL/Gmpz.h>
 
 using namespace std;
 using namespace CGAL;
 
 typedef Gmpzf ET;
-typedef Quadratic_program<double> Program;
+typedef Quadratic_program<int> Program;
 typedef Quadratic_program_solution<ET> Solution;
 static vector<int> min_nutr,max_nutr,price;
 static vector<vector<int> > food;
@@ -54,6 +54,7 @@ int main(){
 		Solution s = solve_linear_program(qp,ET());
 		assert(s.solves_linear_program(qp));
 		if (s.is_infeasible()) cout << "No such diet.\n";
-		else cout <<(int) to_double(s.objective_value()) << endl;
+		//else cout <<(int) to_double(s.objective_value()) << endl;
+		else cout <<(int) s.objective_value() << endl;
 		}
 }

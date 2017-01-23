@@ -1,1 +1,1 @@
-/home/jd/workspace/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir
+/home/jd/git/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir

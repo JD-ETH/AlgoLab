@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jd/workspace/AlgoLab/week7/week7/diet
+CMAKE_SOURCE_DIR = /home/jd/git/AlgoLab/week7/week7/diet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jd/workspace/AlgoLab/week7/week7/diet
+CMAKE_BINARY_DIR = /home/jd/git/AlgoLab/week7/week7/diet
 
 # Include any dependencies generated for this target.
 include CMakeFiles/diet.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/diet.dir/flags.make
 
 CMakeFiles/diet.dir/diet.cpp.o: CMakeFiles/diet.dir/flags.make
 CMakeFiles/diet.dir/diet.cpp.o: diet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jd/workspace/AlgoLab/week7/week7/diet/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jd/git/AlgoLab/week7/week7/diet/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/diet.dir/diet.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/diet.dir/diet.cpp.o -c /home/jd/workspace/AlgoLab/week7/week7/diet/diet.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/diet.dir/diet.cpp.o -c /home/jd/git/AlgoLab/week7/week7/diet/diet.cpp
 
 CMakeFiles/diet.dir/diet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/diet.dir/diet.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jd/workspace/AlgoLab/week7/week7/diet/diet.cpp > CMakeFiles/diet.dir/diet.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jd/git/AlgoLab/week7/week7/diet/diet.cpp > CMakeFiles/diet.dir/diet.cpp.i
 
 CMakeFiles/diet.dir/diet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/diet.dir/diet.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jd/workspace/AlgoLab/week7/week7/diet/diet.cpp -o CMakeFiles/diet.dir/diet.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jd/git/AlgoLab/week7/week7/diet/diet.cpp -o CMakeFiles/diet.dir/diet.cpp.s
 
 CMakeFiles/diet.dir/diet.cpp.o.requires:
 .PHONY : CMakeFiles/diet.dir/diet.cpp.o.requires
@@ -86,13 +86,13 @@ diet: CMakeFiles/diet.dir/diet.cpp.o
 diet: CMakeFiles/diet.dir/build.make
 diet: /usr/lib/x86_64-linux-gnu/libmpfr.so
 diet: /usr/lib/x86_64-linux-gnu/libgmp.so
-diet: /usr/local/lib/x86_64-linux-gnu/libCGAL_Core.so.12.0.0
-diet: /usr/local/lib/x86_64-linux-gnu/libCGAL.so.12.0.0
+diet: /usr/local/lib/libCGAL_Core.so
+diet: /usr/local/lib/libCGAL.so
 diet: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 diet: /usr/lib/x86_64-linux-gnu/libboost_system.so
 diet: /usr/lib/x86_64-linux-gnu/libpthread.so
-diet: /usr/local/lib/x86_64-linux-gnu/libCGAL_Core.so.12.0.0
-diet: /usr/local/lib/x86_64-linux-gnu/libCGAL.so.12.0.0
+diet: /usr/local/lib/libCGAL_Core.so
+diet: /usr/local/lib/libCGAL.so
 diet: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 diet: /usr/lib/x86_64-linux-gnu/libboost_system.so
 diet: /usr/lib/x86_64-linux-gnu/libpthread.so
@@ -112,6 +112,6 @@ CMakeFiles/diet.dir/clean:
 .PHONY : CMakeFiles/diet.dir/clean
 
 CMakeFiles/diet.dir/depend:
-	cd /home/jd/workspace/AlgoLab/week7/week7/diet && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jd/workspace/AlgoLab/week7/week7/diet /home/jd/workspace/AlgoLab/week7/week7/diet /home/jd/workspace/AlgoLab/week7/week7/diet /home/jd/workspace/AlgoLab/week7/week7/diet /home/jd/workspace/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jd/git/AlgoLab/week7/week7/diet && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jd/git/AlgoLab/week7/week7/diet /home/jd/git/AlgoLab/week7/week7/diet /home/jd/git/AlgoLab/week7/week7/diet /home/jd/git/AlgoLab/week7/week7/diet /home/jd/git/AlgoLab/week7/week7/diet/CMakeFiles/diet.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/diet.dir/depend
 
